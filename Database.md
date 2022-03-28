@@ -29,3 +29,8 @@ Cơ sở dữ liệu có vô số trò chơi cùng quan trọng khi làm việc 
 - Database dùng hệ điều hành Windows, ví dụ như: SQL Server – MSSQL,...
 
 - Database dùng hệ điều hành Linux, ví dụ như: MySQL, Mariadb,...
+
+# Những câu lệnh sql cơ bản
+### 1. Trên cơ sở dữ liệu
+
+
