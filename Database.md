@@ -3,6 +3,13 @@ Cơ sở dữ liệu là từ được sử dụng phổ biến trong các lĩnh
 # Đặc điểm của database
 Đặc điểm của database (cơ sở dữ liệu) chính là có thể truy xuất thông tin, dữ liệu theo nhiều cách khác nhau, thông tin từ cơ sở dữ liệu được đảm bảo nhất và toàn vẹn dữ liệu, không hề có sự trùng lặp thông tin, nếu có thì tỷ lệ rất thấp. Một cơ sở dữ liệu database có thể có nhiều người sử dụng cùng một lúc.
 
+![image](https://user-images.githubusercontent.com/101684058/160313778-b85f0b71-3cd6-4eaa-b7b2-ee487bf2ddb6.png)
+
+Như vậy từ đặc điểm của cơ sở dữ liệu database ta có thể thấy nó có nhiều ưu điểm và hạn chế nhất định:
+
+Về mặt ưu điểm của cơ sở dữ liệu database đó chính là nhờ vào việc thông tin lưu trữ không bị trùng lặp giúp đảm bảo tính thông nhất cũng như toàn vẹn của dữ liệu. Nhờ việc không bị trùng lặp giúp giảm thời gian xử lý dữ liệu, cũng như tránh khỏi những sai sót trong quá trình kiểm tra cơ sở dữ liệu database. Ngoài ra, nhờ vào việc có thể truy xuất từ các cách khác nhau nên nhiều người có thể sử dụng cơ sở dữ liệu cùng một lúc mà không phải qua các khâu rườm rà phức tạp. Từ đó tạo điều kiện thuận lợi cho việc  sử dụng, quản lý, truy cập dữ liệu,… Bên cạnh đó cơ sở dữ liệu database cũng có thể được lưu trữ dưới nhiều dạng khác nhau như ổ cứng, usb hay đĩa CD.
+
+Tuy vậy, cơ sở dữ liệu database cũng có những hạn chế nhất định,vì nhiều người chung quyền sử dụng, khai thác cơ sở dữ liệu, nên chủ quyền của người người sử dụng khác nhau có thể bị xâm phạm, ngoài ra vấn đề bảo mật cũng thực sự đáng quan tâm khi mà ai cũng có thể xâm nhập vào cơ sở dữ liệu database, từ đó dẫn đến nguy cơ bị tấn công, đánh cắp dữ liệu. Điều này thường gặp nhiều nhất ở các công ty cung cấp hosting dùng chung, sau khi lập trình web, thiết kế website xong thì người ta thường hay đặt website của mình lên các hosting này vì giá thành rẻ, nhưng đó lại là điểm yếu, chỉ cần một cơ sở dữ liệu database của một website bị tấn công sẽ làm liên lụy đến những trang khác. Đó còn là chưa kể đến những ảnh hưởng từ việc thiết bị lưu trữ cơ sở dữ liệu bị hư hỏng, làm mất toàn bộ dữ liệu của người dùng. Do đó khi sử dụng cơ sở dữ liệu database thì việc bạn cần làm đó là phải backup dữ liệu một cách thường xuyên, đừng trông chờ vào các nhà cung cấp như công ty hositng. Đây cũng là lời khuyên của những chuyên gia lập trình database.
 
 
 # Vai trò của Cơ sở dữ liệu
