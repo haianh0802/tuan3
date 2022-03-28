@@ -93,7 +93,9 @@ sudo mysql
 
 ![image](https://user-images.githubusercontent.com/101684058/160371169-54ff1807-5d26-40f1-8b46-600c26156b32.png)
 
+Tạo database 
 
+![image](https://user-images.githubusercontent.com/101684058/160374514-c0fae5b0-82a7-451e-945b-6249af908a3a.png)
 
 
 
