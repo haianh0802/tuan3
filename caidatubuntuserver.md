@@ -60,6 +60,42 @@ create database <Tên cơ sở dữ liệu>;
 ![image](https://user-images.githubusercontent.com/101684058/160350679-d68e6eaf-a49d-4895-9322-f06d7865e56d.png)
 
 
+# Cài đặt MySQL trên Ubuntu 20.04
+Bước 1 - Cài đặt MySQL
+Trên Ubuntu 20.04, bạn có thể cài đặt MySQL bằng cách sử dụng kho lưu trữ gói APT. Tại thời điểm viết bài này, phiên bản MySQL có sẵn trong kho lưu trữ Ubuntu mặc định là phiên bản 8.0.19.
+
+Để cài đặt nó, hãy cập nhật chỉ mục gói trên máy chủ, nếu gần đây bạn chưa làm như vậy:
+
+sudo apt update
+
+Sau đó cài đặt gói mysql-server:
+
+sudo apt install mysql-server
+Thao tác này sẽ cài đặt MySQL, nhưng sẽ không nhắc bạn đặt mật khẩu hoặc thực hiện bất kỳ thay đổi cấu hình nào khác.
+
+Bước 2 - Cấu hình MySQL
+Đối với các bản cài đặt mới của MySQL, bạn sẽ muốn chạy script bảo mật đi kèm của DBMS. Script này thay đổi một số tùy chọn mặc định kém bảo mật hơn cho những thứ như thông tin đăng nhập root từ xa và người dùng mẫu.
+
+Chạy script bảo mật với sudo:
+
+sudo mysql_secure_installation
+
+![image](https://user-images.githubusercontent.com/101684058/160370235-bd1a86dd-3753-476d-ae0b-95b5ee019800.png)
+
+Nhập mật khẩu mới vào, rồi nhập Y.
+Khi script hoàn tất, cài đặt MySQL sẽ được bảo mật. Bây giờ, bạn có thể chuyển sang tạo người dùng cơ sở dữ liệu chuyên dụng với MySQL client.
+
+Bước 3 - Tạo người dùng MySQL chuyên dụng và cấp các đặc quyền
+
+gọi mysql với đặc quyền sudo để có quyền truy cập vào người dùng MySQL root:
+
+sudo mysql
+
+![image](https://user-images.githubusercontent.com/101684058/160371169-54ff1807-5d26-40f1-8b46-600c26156b32.png)
+
+
+
+
 
 
 
