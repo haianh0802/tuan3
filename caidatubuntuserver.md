@@ -95,7 +95,7 @@ sudo mysql
 
 Tạo database 
 
-![image](https://user-images.githubusercontent.com/101684058/160374514-c0fae5b0-82a7-451e-945b-6249af908a3a.png)
+![image](https://user-images.githubusercontent.com/101684058/160551727-1dce7659-ca18-43ed-a6dc-0b92d6ab21d4.png)
 
 ### Các bước cài đặt LAMP trên Ubuntu
 Bước 1: Cập nhật gói phần mềm
