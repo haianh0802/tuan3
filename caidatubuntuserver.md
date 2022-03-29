@@ -97,6 +97,37 @@ Tạo database
 
 ![image](https://user-images.githubusercontent.com/101684058/160374514-c0fae5b0-82a7-451e-945b-6249af908a3a.png)
 
+### Các bước cài đặt LAMP trên Ubuntu
+Bước 1: Cập nhật gói phần mềm
+Trước khi cài đặt  LAMP, bạn nên cập nhật gói phần mềm và kho lưu trữ. Chạy các lệnh sau trên hệ điều hành Ubuntu 20.04:
+
+sudo apt update 
+
+sudo apt upgrade
+
+Bước 2: Cài đặt Apache Web Server
+Nhập lệnh sau để cài đặt Apache Web server. Gói apache2-utils sẽ cài đặt một số tiện ích hữu ích như công cụ benchmark Apache HTTP server.
+
+sudo apt install -y apache2 apache2-utils
+
+
+Sau khi được cài đặt, Apache sẽ tự động được khởi động. Kiểm tra trạng thái của nó với systemctl.
+
+systemctl status apache2
+
+![image](https://user-images.githubusercontent.com/101684058/160526437-ff54fc4f-01e9-4acc-aece-d8f15c9d94f2.png)
+
+Kiểm tra phiên bản Apache:
+
+apache2 -v
+
+![image](https://user-images.githubusercontent.com/101684058/160526801-f87aee7a-6399-4968-a9ce-6d325278662f.png)
+
+
+
+![image](https://user-images.githubusercontent.com/101684058/160530570-4e868515-39f8-4796-9628-9e8425ae7b90.png)
+
+
 
 
 
