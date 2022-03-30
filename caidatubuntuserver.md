@@ -129,6 +129,33 @@ apache2 -v
 
 
 
+# Cài đặt php
+Bước 1: Thêm PHP PPA
+
+Chạy lệnh sau để thêm kho lưu trữ PHP ondrej vào hệ thống Ubuntu của bạn.
+
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php -y
+
+![image](https://user-images.githubusercontent.com/101684058/160731892-1d740385-dd4a-4acf-a09f-bb84658450c5.png)
+
+Cập nhật apt
+
+![image](https://user-images.githubusercontent.com/101684058/160732086-5f441034-33c3-403b-a608-d49daa43cf82.png)
+
+Cài đặt php
+
+sudo apt install -y php7.3
+
+Bước 3: Xem phiên bản hoạt động hiện tại
+
+![image](https://user-images.githubusercontent.com/101684058/160732529-bb1401a2-4794-4ccf-bbeb-799358716d76.png)
+
+Bước 4: Cài đăth php Modul
+
+
+
+
 
 
 
