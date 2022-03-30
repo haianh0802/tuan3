@@ -208,6 +208,33 @@ Bây giờ truy cập lại trang info.php trong trình duyệt của mình, b�
 
 ![image](https://user-images.githubusercontent.com/101684058/160739786-f3dbcae8-d441-417d-a24d-450a66e49689.png)
 
+# cài đặt phpMyAdmin
+phpMyAdmin có sẵn trong kho phần mềm Ubuntu 20.04. vì vậy chúng ta có thể dễ dàng cài đặt nó bằng lệnh bên dưới.
+
+![image](https://user-images.githubusercontent.com/101684058/160740943-fadb4d98-8b9b-4904-8676-312af5d763e3.png)
+![image](https://user-images.githubusercontent.com/101684058/160741070-3de6a49e-e403-4ae5-8030-d84b1c921089.png)
+
+Lệnh trên sẽ cài đặt tất cả các thành phần cần thiết bao gồm các phần mở rộng PHP7. Trong quá trình cài đặt, nó sẽ nhắc bạn chọn một máy chủ web để cấu hình
+![image](https://user-images.githubusercontent.com/101684058/160741252-4ec76ecf-b93c-42d8-a3ee-ac8f11e96c4a.png)
+
+Trong màn hình tiếp theo, chọn Yes để định cấu hình cơ sở dữ liệu cho phpMyAdmin với dbconfig-common.
+![image](https://user-images.githubusercontent.com/101684058/160741431-a764ae9c-3135-40b0-8fc9-5d92539c2860.png)
+
+Đặt mật khẩu cho người dùng
+
+![image](https://user-images.githubusercontent.com/101684058/160741557-d2a171aa-a830-4226-9782-773169c1127a.png)
+
+Xác nhận mật khẩu 1 lần nữa
+![image](https://user-images.githubusercontent.com/101684058/160741706-43eacbd5-f30c-439f-a0df-bc080385eb9f.png)
+
+
+
+![image](https://user-images.githubusercontent.com/101684058/160742553-67c105ec-68e0-41ba-8db4-bbd7b22a4843.png)
+
+![image](https://user-images.githubusercontent.com/101684058/160742679-79ff0f10-5b10-4c8a-8b70-b8b04151c6ca.png)
+
+![image](https://user-images.githubusercontent.com/101684058/160742799-d6b8bdf8-0f9b-4400-8bf5-7a4b071dd6aa.png)
+
 
 
 
