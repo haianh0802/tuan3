@@ -228,12 +228,20 @@ Xác nhận mật khẩu 1 lần nữa
 ![image](https://user-images.githubusercontent.com/101684058/160741706-43eacbd5-f30c-439f-a0df-bc080385eb9f.png)
 
 
+Nếu bạn muốn kiểm tra những đặc quyền mà người dùng phpmyadmin đã được cấp bạn có thể sử dụng lệnh sau để đăng nhập vào máy chủ MariaDB.
 
-![image](https://user-images.githubusercontent.com/101684058/160742553-67c105ec-68e0-41ba-8db4-bbd7b22a4843.png)
+sudo mysql
+Sau đó kiểm tra các đặc quyền của người dùng phpmyadmin.
 
-![image](https://user-images.githubusercontent.com/101684058/160742679-79ff0f10-5b10-4c8a-8b70-b8b04151c6ca.png)
+![image](https://user-images.githubusercontent.com/101684058/160784502-9a407835-224d-4e6a-903d-9a246ae08bb8.png)
 
-![image](https://user-images.githubusercontent.com/101684058/160742799-d6b8bdf8-0f9b-4400-8bf5-7a4b071dd6aa.png)
+Bây giờ bạn có thể thoát bằng lệnh:
+
+exit;
+
+4. Truy cập phpMyAdmin
+Để truy cập phpMyAdmin các bạn gõ trên thanh địa chỉ your_server_ip/phpmyadmin
+
 
 
 
