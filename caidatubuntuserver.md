@@ -152,8 +152,61 @@ Bước 3: Xem phiên bản hoạt động hiện tại
 ![image](https://user-images.githubusercontent.com/101684058/160732529-bb1401a2-4794-4ccf-bbeb-799358716d76.png)
 
 Bước 4: Cài đăth php Modul
+Sử dụng lệnh sau để tìm kiếm các modules PHP 7 có sẵn trong kho lưu trữ.
+
+sudo apt-cache search php7*
+
+Bước 5 – Chuyển đổi giữa các phiên bản PHP
+Bạn có thể sử dụng lệnh update-alternatives để chuyển đổi giữa các phiên bản PHP.
+
+update-alternatives --config php
+
+1.5. Bước 5: Cấu hình PHP Module
+Sau khi cài đặt php hãy kích hoạt module Apache php7.4 sau đó khởi động lại máy chủ Web Apache.
+![image](https://user-images.githubusercontent.com/101684058/160733551-16acd6ae-a56a-4ffe-ba1a-1a61be8df131.png)
+
+Để kiểm tra các tập lệnh PHP với máy chủ Apache, chúng ta cần tạo một tệp info.php trong thư mục /var/www/html.
+
+Hướng dẫn sử dụng Nano Editor trên Linux
+sudo nano /var/www/html/info.php
+Dán mã PHP sau vào tệp.
+
+<?php phpinfo(); ?>
+
+Bây giờ trong thanh địa chỉ của trình duyệt, nhập server-ip-address/info.php. Thay thế địa chỉ server-ip-address bằng IP thực tế của bạn. Nếu bạn làm theo hướng dẫn này trên máy tính của mình, hãy nhập 127.0.0.1/info.php hoặc localhost/info.php.
+
+![image](https://user-images.githubusercontent.com/101684058/160735574-df0278e0-a464-431b-8946-a0bea8658382.png)
+
+2. Chạy PHP-FPM với Apache (Tuỳ chọn)
+Về cơ bản có hai cách để chạy mã PHP với máy chủ web Apache:
+
+Apache PHP module
+PHP-FPM.
+Trong các bước trên, modules Apache PHP7.3 được sử dụng để xử lý mã PHP. Tuy nhiên trong một số trường hợp, bạn cần chạy mã PHP bằng PHP-FPM. Để làm điều này hãy làm theo các bước sau.
+
+Vô hiệu hóa mô-đun Apache PHP7.3.
+
+![image](https://user-images.githubusercontent.com/101684058/160738853-268812cb-0d50-4c7d-adf6-56b0f724e32b.png)
+
+Cài đặt PHP-FPM.
+
+sudo apt install php7.3-fpm -y
 
 
+Kích hoạt mô-đun proxy_fcgi và setenvif.
+
+![image](https://user-images.githubusercontent.com/101684058/160739199-7613a603-e6a2-46ce-a063-16bec5cbbfb8.png)
+
+Kích hoạt tệp cấu hình /etc/apache2/conf-available/php7.3-fpm.conf.
+![image](https://user-images.githubusercontent.com/101684058/160739327-ade210ba-b35d-4b51-a492-0faa5532d384.png)
+
+Khởi động lại Apache để các thay đổi có hiệu lực.
+
+![image](https://user-images.githubusercontent.com/101684058/160739813-570e1f37-3d87-4833-998c-592aeb46c758.png)
+
+Bây giờ truy cập lại trang info.php trong trình duyệt của mình, bạn sẽ thấy API máy chủ được thay đổi từ Apache 2.0 Handler thành FPM / FastCGI, có nghĩa là máy chủ web Apache sẽ chuyển các yêu cầu PHP sang PHP-FPM.
+
+![image](https://user-images.githubusercontent.com/101684058/160739786-f3dbcae8-d441-417d-a24d-450a66e49689.png)
 
 
 
