@@ -163,6 +163,7 @@ update-alternatives --config php
 
 1.5. Bước 5: Cấu hình PHP Module
 Sau khi cài đặt php hãy kích hoạt module Apache php7.4 sau đó khởi động lại máy chủ Web Apache.
+
 ![image](https://user-images.githubusercontent.com/101684058/160733551-16acd6ae-a56a-4ffe-ba1a-1a61be8df131.png)
 
 Để kiểm tra các tập lệnh PHP với máy chủ Apache, chúng ta cần tạo một tệp info.php trong thư mục /var/www/html.
@@ -198,6 +199,7 @@ Kích hoạt mô-đun proxy_fcgi và setenvif.
 ![image](https://user-images.githubusercontent.com/101684058/160739199-7613a603-e6a2-46ce-a063-16bec5cbbfb8.png)
 
 Kích hoạt tệp cấu hình /etc/apache2/conf-available/php7.3-fpm.conf.
+
 ![image](https://user-images.githubusercontent.com/101684058/160739327-ade210ba-b35d-4b51-a492-0faa5532d384.png)
 
 Khởi động lại Apache để các thay đổi có hiệu lực.
@@ -212,12 +214,15 @@ Bây giờ truy cập lại trang info.php trong trình duyệt của mình, b�
 phpMyAdmin có sẵn trong kho phần mềm Ubuntu 20.04. vì vậy chúng ta có thể dễ dàng cài đặt nó bằng lệnh bên dưới.
 
 ![image](https://user-images.githubusercontent.com/101684058/160740943-fadb4d98-8b9b-4904-8676-312af5d763e3.png)
+
 ![image](https://user-images.githubusercontent.com/101684058/160741070-3de6a49e-e403-4ae5-8030-d84b1c921089.png)
 
 Lệnh trên sẽ cài đặt tất cả các thành phần cần thiết bao gồm các phần mở rộng PHP7. Trong quá trình cài đặt, nó sẽ nhắc bạn chọn một máy chủ web để cấu hình
+
 ![image](https://user-images.githubusercontent.com/101684058/160741252-4ec76ecf-b93c-42d8-a3ee-ac8f11e96c4a.png)
 
 Trong màn hình tiếp theo, chọn Yes để định cấu hình cơ sở dữ liệu cho phpMyAdmin với dbconfig-common.
+
 ![image](https://user-images.githubusercontent.com/101684058/160741431-a764ae9c-3135-40b0-8fc9-5d92539c2860.png)
 
 Đặt mật khẩu cho người dùng
@@ -225,6 +230,7 @@ Trong màn hình tiếp theo, chọn Yes để định cấu hình cơ sở dữ
 ![image](https://user-images.githubusercontent.com/101684058/160741557-d2a171aa-a830-4226-9782-773169c1127a.png)
 
 Xác nhận mật khẩu 1 lần nữa
+
 ![image](https://user-images.githubusercontent.com/101684058/160741706-43eacbd5-f30c-439f-a0df-bc080385eb9f.png)
 
 
@@ -241,6 +247,8 @@ exit;
 
 4. Truy cập phpMyAdmin
 Để truy cập phpMyAdmin các bạn gõ trên thanh địa chỉ your_server_ip/phpmyadmin
+
+![image](https://user-images.githubusercontent.com/101684058/160965812-ae889ca4-408c-4565-b6b4-719f312b2b82.png)
 
 
 
