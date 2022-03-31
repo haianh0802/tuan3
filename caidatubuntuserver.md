@@ -20,7 +20,7 @@ systemctl status mariadb
 
 
 # Cấu hình và thao tác cơ bản với MariaDB
-1 Cấu hình ban đầu cho MariaDB
+ Cấu hình ban đầu cho MariaDB
 
 Cho phép cải thiện khả năng bảo mật với lệnh sau :
 
@@ -97,7 +97,7 @@ Tạo database
 
 ![image](https://user-images.githubusercontent.com/101684058/160551727-1dce7659-ca18-43ed-a6dc-0b92d6ab21d4.png)
 
-### Các bước cài đặt LAMP trên Ubuntu
+## Các bước cài đặt LAMP trên Ubuntu
 Bước 1: Cập nhật gói phần mềm
 Trước khi cài đặt  LAMP, bạn nên cập nhật gói phần mềm và kho lưu trữ. Chạy các lệnh sau trên hệ điều hành Ubuntu 20.04:
 
@@ -117,7 +117,7 @@ systemctl status apache2
 
 ![image](https://user-images.githubusercontent.com/101684058/160526437-ff54fc4f-01e9-4acc-aece-d8f15c9d94f2.png)
 
-Kiểm tra phiên bản Apache:
+Bước 3: Kiểm tra phiên bản Apache:
 
 apache2 -v
 
@@ -143,7 +143,7 @@ Cập nhật apt
 
 ![image](https://user-images.githubusercontent.com/101684058/160732086-5f441034-33c3-403b-a608-d49daa43cf82.png)
 
-Cài đặt php
+Bước 2: Cài đặt php
 
 sudo apt install -y php7.3
 
@@ -161,7 +161,7 @@ Bạn có thể sử dụng lệnh update-alternatives để chuyển đổi gi�
 
 update-alternatives --config php
 
-1.5. Bước 5: Cấu hình PHP Module
+Bước 6: Cấu hình PHP Module
 Sau khi cài đặt php hãy kích hoạt module Apache php7.4 sau đó khởi động lại máy chủ Web Apache.
 
 ![image](https://user-images.githubusercontent.com/101684058/160733551-16acd6ae-a56a-4ffe-ba1a-1a61be8df131.png)
@@ -176,9 +176,9 @@ Dán mã PHP sau vào tệp.
 
 Bây giờ trong thanh địa chỉ của trình duyệt, nhập server-ip-address/info.php. Thay thế địa chỉ server-ip-address bằng IP thực tế của bạn. Nếu bạn làm theo hướng dẫn này trên máy tính của mình, hãy nhập 127.0.0.1/info.php hoặc localhost/info.php.
 
-![image](https://user-images.githubusercontent.com/101684058/160735574-df0278e0-a464-431b-8946-a0bea8658382.png)
+![image](https://user-images.githubusercontent.com/101684058/160966521-d819cc3f-5b46-4771-a9a8-4e8d9012c340.png)
 
-2. Chạy PHP-FPM với Apache (Tuỳ chọn)
+###### Chạy PHP-FPM với Apache (Tuỳ chọn)
 Về cơ bản có hai cách để chạy mã PHP với máy chủ web Apache:
 
 Apache PHP module
@@ -245,7 +245,7 @@ Bây giờ bạn có thể thoát bằng lệnh:
 
 exit;
 
-4. Truy cập phpMyAdmin
+Truy cập phpMyAdmin
 Để truy cập phpMyAdmin các bạn gõ trên thanh địa chỉ your_server_ip/phpmyadmin
 
 ![image](https://user-images.githubusercontent.com/101684058/160965812-ae889ca4-408c-4565-b6b4-719f312b2b82.png)
