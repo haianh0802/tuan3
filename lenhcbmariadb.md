@@ -66,4 +66,31 @@ GRANT ALL PRIVILEGES ON test.* TO 'test'@'localhost';
 
 ![image](https://user-images.githubusercontent.com/101684058/160971616-2519d890-7171-4055-aa01-304bb2ca3f56.png)
 
+12. Lệnh thêm mới cột trong bảng
+Cú pháp chung để thêm mới cột như sau:
+
+`ALTER TABLE table_name ADD column_name column_definition;`
+
+![image](https://user-images.githubusercontent.com/101684058/160972268-770ebfc9-3a12-4935-aeef-c158deeba0c5.png)
+
+13.  Lệnh đổi tên cột trong bảng
+Sau đây là cú pháp chung để đổi tên cột như sau:
+`ALTER TABLE table_name CHANGE COLUMN old_column new_column VARCHAR(25)`
+
+![image](https://user-images.githubusercontent.com/101684058/160973062-c9f6825e-bf68-4e53-ad1c-10d451e55cf8.png)
+
+14. Lệnh xóa cột trong MariaDB
+Cú pháp chung để xóa cột như sau:
+`ALTER TABLE table_name DROP COLUMN column_name;`
+
+![image](https://user-images.githubusercontent.com/101684058/160973199-798991b2-bc4b-4255-8b90-eb2d303c2df0.png)
+
+15. Lệnh thay đổi cột kiểu dữ liệu cột trong bảng
+Cú pháp chung để thay đổi kiểu dữ liệu cột như sau:
+
+`ALTER TABLE table_name MODIFY column_name VARCHAR(50);`
+
+![image](https://user-images.githubusercontent.com/101684058/160973424-01e2921b-69eb-46bb-9e1a-47895d8de6fa.png)
+
+
 
