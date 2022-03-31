@@ -250,6 +250,11 @@ exit;
 
 ![image](https://user-images.githubusercontent.com/101684058/160965812-ae889ca4-408c-4565-b6b4-719f312b2b82.png)
 
+Đăng nhập bằng tài khoản root
+
+![image](https://user-images.githubusercontent.com/101684058/160966190-f864a75d-e297-4a5f-a81e-9e2d039e3c0f.png)
+
+
 
 
 
